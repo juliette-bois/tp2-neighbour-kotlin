@@ -26,6 +26,10 @@ class AddNeighbourFragment: Fragment() {
 
         onValidateClick()
 
+        (activity as? NavigationListener)?.let {
+            it.updateTitle(R.string.add_neighbor_title)
+        }
+
         return binding.root
     }
 

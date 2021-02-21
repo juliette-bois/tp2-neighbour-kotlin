@@ -18,4 +18,6 @@
     <string name="unvalid_phone_number_message">Enter a valid phone number</string>
     <string name="unvalid_email_message">Enter a valid E-mail adress</string>
     <string name="longer_content_message">The content is too long (maximum 50 characters)</string>
+    <string name="add_neighbor_title">Add neighbor</string>
+    <string name="list_neighbor_title">List of my neighbors</string>
 </resources>

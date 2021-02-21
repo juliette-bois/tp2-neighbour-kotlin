@@ -13,8 +13,7 @@ class MainActivity : AppCompatActivity(), NavigationListener {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        //setSupportActionBar(binding.toolbar)
+        setSupportActionBar(binding.toolbar)
         showFragment(ListNeighborsFragment())
     }
 
@@ -25,8 +24,8 @@ class MainActivity : AppCompatActivity(), NavigationListener {
         }.commit()
     }
 
-    /*override fun updateTitle(title: Int) {
+    override fun updateTitle(title: Int) {
         binding.toolbar.setTitle(title)
-    }*/
+    }
 
 }

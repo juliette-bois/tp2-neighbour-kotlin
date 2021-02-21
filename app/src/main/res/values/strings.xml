@@ -17,4 +17,6 @@
     <string name="unvalid_phone_number_message">Entrez un numéro de téléphone valide</string>
     <string name="unvalid_email_message">Entrez une adresse email valide</string>
     <string name="longer_content_message">Le content est trop long (maximum 50 charactères)</string>
+    <string name="add_neighbor_title">Ajouter un voisin</string>
+    <string name="list_neighbor_title">Liste de mes voisins</string>
 </resources>

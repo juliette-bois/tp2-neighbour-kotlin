@@ -31,8 +31,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/item_list_avatar"
         app:layout_constraintStart_toEndOf="@+id/item_list_avatar"
-        app:layout_constraintTop_toTopOf="@+id/item_list_avatar"
-        tools:text="Mon voisin" />
+        app:layout_constraintTop_toTopOf="@+id/item_list_avatar" />
 
     <ImageButton
         android:id="@+id/item_list_delete_button"

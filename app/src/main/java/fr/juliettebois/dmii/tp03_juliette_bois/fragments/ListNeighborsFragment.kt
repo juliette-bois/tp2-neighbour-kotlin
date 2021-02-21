@@ -35,6 +35,11 @@ class ListNeighborsFragment: Fragment(), ListNeighborHandler {
             )
         )
         onCreateNeibor()
+
+        (activity as? NavigationListener)?.let {
+            it.updateTitle(R.string.list_neighbor_title)
+        }
+
         return binding.root
     }
 
