@@ -12,7 +12,7 @@ class InMemoryNeighborDataSource : NeighborDatasource {
     }
 
     override fun createNeighbour(neighbor: Neighbor) {
-        TODO("Not yet implemented")
+        InMemory_Neighbors.add(neighbor)
     }
 
     override fun updateFavoriteStatus(neighbor: Neighbor) {

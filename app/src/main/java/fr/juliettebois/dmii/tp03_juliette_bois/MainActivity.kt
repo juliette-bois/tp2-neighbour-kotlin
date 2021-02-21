@@ -6,17 +6,18 @@ import androidx.fragment.app.Fragment
 import fr.juliettebois.dmii.tp03_juliette_bois.databinding.ActivityMainBinding
 import fr.juliettebois.dmii.tp03_juliette_bois.fragments.ListNeighborsFragment
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), NavigationListener {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        changeFragment(ListNeighborsFragment())
+
+        showFragment(ListNeighborsFragment())
     }
 
-    private fun changeFragment(fragment: Fragment) {
+    override fun showFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.fragment_container, fragment)
             addToBackStack(null)

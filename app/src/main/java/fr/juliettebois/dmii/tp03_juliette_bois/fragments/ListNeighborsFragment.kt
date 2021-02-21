@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import fr.juliettebois.dmii.tp03_juliette_bois.NavigationListener
 import fr.juliettebois.dmii.tp03_juliette_bois.adapters.ListNeighborHandler
 import fr.juliettebois.dmii.tp03_juliette_bois.adapters.ListNeighborsAdapter
 import fr.juliettebois.dmii.tp03_juliette_bois.data.NeighborRepository
@@ -32,6 +33,7 @@ class ListNeighborsFragment: Fragment(), ListNeighborHandler {
                 DividerItemDecoration.VERTICAL
             )
         )
+        onCreateNeibor()
         return binding.root
     }
 
@@ -61,5 +63,13 @@ class ListNeighborsFragment: Fragment(), ListNeighborHandler {
 
     override fun onDeleteNeibor(neighbor: Neighbor) {
         onCreateDialog(neighbor)
+    }
+
+    fun onCreateNeibor() {
+        binding.addNeighbor.setOnClickListener {
+            (activity as? NavigationListener)?.let {
+                it.showFragment(AddNeighbourFragment())
+            }
+        }
     }
 }
