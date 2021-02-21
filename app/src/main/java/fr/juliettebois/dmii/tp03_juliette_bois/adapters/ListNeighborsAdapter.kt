@@ -22,7 +22,10 @@ class ListNeighborsAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val itemViewHolder = holder as ViewHolder
         val neighbour: Neighbor = mNeighbours[position]
+        itemViewHolder.binding.itemListName.text = neighbour.name
+
         // Display Neighbour Name
         holder.binding.itemListName.text = neighbour.name
 
@@ -45,6 +48,6 @@ class ListNeighborsAdapter(
         return mNeighbours.size
     }
 
-    class ViewHolder(val binding: NeighborItemBinding) :
+    class ViewHolder(var binding: NeighborItemBinding) :
         RecyclerView.ViewHolder(binding.root)
 }

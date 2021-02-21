@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity(), NavigationListener {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //setSupportActionBar(binding.toolbar)
         showFragment(ListNeighborsFragment())
     }
 
@@ -23,5 +24,9 @@ class MainActivity : AppCompatActivity(), NavigationListener {
             addToBackStack(null)
         }.commit()
     }
+
+    /*override fun updateTitle(title: Int) {
+        binding.toolbar.setTitle(title)
+    }*/
 
 }

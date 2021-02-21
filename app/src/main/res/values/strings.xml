@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">TP03_Juliette_Bois</string>
+    <string name="image_field">Image</string>
+    <string name="name_field">Nom du voisin</string>
+    <string name="phone_field">Numéro de téléphone</string>
+    <string name="website_field">URL du site web</string>
+    <string name="email_field">Adresse email</string>
+    <string name="about_field">À propos</string>
+    <string name="validate_button">Valider</string>
+    <string name="confirm_button">Confirmation</string>
+    <string name="confirm_create_message">Voulez-vous supprimer ce voisin ?</string>
+    <string name="confirm_created_message">Le voisin n\'a pas été supprimé</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="empty_field_message">Entrez une valeur</string>
+    <string name="unvalid_url_message">Entrez une URL valide</string>
+    <string name="unvalid_phone_number_message">Entrez un numéro de téléphone valide</string>
+    <string name="unvalid_email_message">Entrez une adresse email valide</string>
+    <string name="longer_content_message">Le content est trop long (maximum 50 charactères)</string>
 </resources>

@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import fr.juliettebois.dmii.tp03_juliette_bois.NavigationListener
+import fr.juliettebois.dmii.tp03_juliette_bois.R
 import fr.juliettebois.dmii.tp03_juliette_bois.adapters.ListNeighborHandler
 import fr.juliettebois.dmii.tp03_juliette_bois.adapters.ListNeighborsAdapter
 import fr.juliettebois.dmii.tp03_juliette_bois.data.NeighborRepository
@@ -46,17 +47,17 @@ class ListNeighborsFragment: Fragment(), ListNeighborHandler {
 
     private fun onCreateDialog(neighbor: Neighbor) {
         val builder = AlertDialog.Builder(context)
-        builder.setTitle("Confirmation")
-            .setMessage("Voulez-vous supprimer ce voisin ?")
-            .setPositiveButton("Oui",
+        builder.setTitle(R.string.confirm_button)
+            .setMessage(R.string.confirm_create_message)
+            .setPositiveButton(R.string.yes,
                 DialogInterface.OnClickListener { dialog, id ->
                     NeighborRepository.getInstance().deleteNeighbour(neighbor)
                     binding.neighborsList.adapter?.notifyDataSetChanged()
                 })
-            .setNegativeButton("Non",
+            .setNegativeButton(R.string.no,
                 DialogInterface.OnClickListener { dialog, id ->
                     dialog.cancel()
-                    Toast.makeText(context, "Le voisin n'a pas été supprimé", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, R.string.confirm_created_message, Toast.LENGTH_SHORT).show()
                 })
         builder.create().show()
     }

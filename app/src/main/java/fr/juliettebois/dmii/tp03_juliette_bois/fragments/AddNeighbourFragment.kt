@@ -32,28 +32,28 @@ class AddNeighbourFragment: Fragment() {
     private fun onValidateClick() {
         form {
             input(binding.image) {
-                isNotEmpty().description("Please enter a value!")
-                isUrl().description("Please enter a valid url!")
+                isNotEmpty().description(R.string.empty_field_message)
+                isUrl().description(R.string.unvalid_url_message)
             }
             input(binding.name) {
-                isNotEmpty().description("Please enter a value!")
+                isNotEmpty().description(R.string.empty_field_message)
             }
             input(binding.phone) {
-                isNotEmpty().description("Please enter a value!")
-                length().exactly(10).description("Please enter a valid phone number!")
-                matches("/^0(6|7)[0-9]{8}").description("Please enter a valid phone number!")
+                isNotEmpty().description(R.string.empty_field_message)
+                length().exactly(10).description(R.string.unvalid_phone_number_message)
+                matches("/^0(6|7)[0-9]{8}").description(R.string.unvalid_phone_number_message)
             }
             input(binding.website) {
-                isNotEmpty().description("Please enter a value!")
-                isUrl().description("Please enter a valid url!")
+                isNotEmpty().description(R.string.empty_field_message)
+                isUrl().description(R.string.unvalid_url_message)
             }
             input(binding.adress) {
-                isNotEmpty().description("Please enter a value!")
-                isEmail().description("Please enter a valid email!")
+                isNotEmpty().description(R.string.empty_field_message)
+                isEmail().description(R.string.unvalid_email_message)
             }
             input(binding.about) {
-                isNotEmpty().description("Please enter a value!")
-                length().atMost(30).description("Please enter a shorter content!")
+                isNotEmpty().description(R.string.empty_field_message)
+                length().atMost(30).description(R.string.longer_content_message)
             }
 
             submitWith(binding.validateNeighbor) { result ->
