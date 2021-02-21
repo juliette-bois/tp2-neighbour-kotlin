@@ -45,7 +45,7 @@ class AddNeighbourFragment: Fragment() {
             input(binding.phone) {
                 isNotEmpty().description(R.string.empty_field_message)
                 length().exactly(10).description(R.string.unvalid_phone_number_message)
-                matches("/^0(6|7)[0-9]{8}").description(R.string.unvalid_phone_number_message)
+                //matches("/^(06|07)\\d{8}/gi").description(R.string.unvalid_phone_number_message)
             }
             input(binding.website) {
                 isNotEmpty().description(R.string.empty_field_message)
