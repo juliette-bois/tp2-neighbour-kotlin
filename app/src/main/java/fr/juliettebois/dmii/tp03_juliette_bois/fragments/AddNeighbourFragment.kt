@@ -60,6 +60,8 @@ class AddNeighbourFragment: Fragment() {
                 length().atMost(30).description(R.string.longer_content_message)
             }
 
+            //binding.validateNeighbor.isEnabled = true
+
             submitWith(binding.validateNeighbor) { result ->
                 var neighbor = Neighbor(
                         UUID.randomUUID().mostSignificantBits,
