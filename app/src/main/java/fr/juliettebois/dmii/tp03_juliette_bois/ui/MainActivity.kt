@@ -1,10 +1,12 @@
-package fr.juliettebois.dmii.tp03_juliette_bois
+package fr.juliettebois.dmii.tp03_juliette_bois.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import fr.juliettebois.dmii.tp03_juliette_bois.NavigationListener
+import fr.juliettebois.dmii.tp03_juliette_bois.R
 import fr.juliettebois.dmii.tp03_juliette_bois.databinding.ActivityMainBinding
-import fr.juliettebois.dmii.tp03_juliette_bois.fragments.ListNeighborsFragment
+import fr.juliettebois.dmii.tp03_juliette_bois.ui.fragments.ListNeighborsFragment
 
 class MainActivity : AppCompatActivity(), NavigationListener {
     private lateinit var binding: ActivityMainBinding
@@ -27,5 +29,4 @@ class MainActivity : AppCompatActivity(), NavigationListener {
     override fun updateTitle(title: Int) {
         binding.toolbar.setTitle(title)
     }
-
 }

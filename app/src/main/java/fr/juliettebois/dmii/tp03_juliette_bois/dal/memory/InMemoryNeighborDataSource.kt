@@ -1,5 +1,6 @@
-package fr.juliettebois.dmii.tp03_juliette_bois.data.datasource
+package fr.juliettebois.dmii.tp03_juliette_bois.dal.memory
 
+import fr.juliettebois.dmii.tp03_juliette_bois.dal.NeighborDatasource
 import fr.juliettebois.dmii.tp03_juliette_bois.models.Neighbor
 
 class InMemoryNeighborDataSource : NeighborDatasource {

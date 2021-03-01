@@ -1,7 +1,7 @@
-package fr.juliettebois.dmii.tp03_juliette_bois.data
+package fr.juliettebois.dmii.tp03_juliette_bois.repositories
 
-import fr.juliettebois.dmii.tp03_juliette_bois.data.datasource.InMemoryNeighborDataSource
-import fr.juliettebois.dmii.tp03_juliette_bois.data.datasource.NeighborDatasource
+import fr.juliettebois.dmii.tp03_juliette_bois.dal.memory.InMemoryNeighborDataSource
+import fr.juliettebois.dmii.tp03_juliette_bois.dal.NeighborDatasource
 import fr.juliettebois.dmii.tp03_juliette_bois.models.Neighbor
 
 class NeighborRepository {

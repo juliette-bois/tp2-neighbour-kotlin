@@ -1,4 +1,4 @@
-package fr.juliettebois.dmii.tp03_juliette_bois.fragments
+package fr.juliettebois.dmii.tp03_juliette_bois.ui.fragments
 
 import android.app.AlertDialog
 import android.content.DialogInterface
@@ -14,7 +14,7 @@ import fr.juliettebois.dmii.tp03_juliette_bois.NavigationListener
 import fr.juliettebois.dmii.tp03_juliette_bois.R
 import fr.juliettebois.dmii.tp03_juliette_bois.adapters.ListNeighborHandler
 import fr.juliettebois.dmii.tp03_juliette_bois.adapters.ListNeighborsAdapter
-import fr.juliettebois.dmii.tp03_juliette_bois.data.NeighborRepository
+import fr.juliettebois.dmii.tp03_juliette_bois.repositories.NeighborRepository
 import fr.juliettebois.dmii.tp03_juliette_bois.databinding.ListNeighborsFragmentBinding
 import fr.juliettebois.dmii.tp03_juliette_bois.models.Neighbor
 
