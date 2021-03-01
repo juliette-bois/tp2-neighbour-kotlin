@@ -1,5 +1,6 @@
 package fr.juliettebois.dmii.tp03_juliette_bois.dal
 
+import androidx.lifecycle.LiveData
 import fr.juliettebois.dmii.tp03_juliette_bois.models.Neighbor
 
 interface NeighborDatasource {
@@ -7,7 +8,7 @@ interface NeighborDatasource {
      * Get all my Neighbors
      * @return [List]
      */
-    val neighbours: List<Neighbor>
+    val neighbours: LiveData<List<Neighbor>>
 
     /**
      * Deletes a neighbor

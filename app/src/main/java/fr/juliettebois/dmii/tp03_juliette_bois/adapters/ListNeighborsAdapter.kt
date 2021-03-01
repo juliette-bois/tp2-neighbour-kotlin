@@ -11,7 +11,7 @@ import fr.juliettebois.dmii.tp03_juliette_bois.models.Neighbor
 
 class ListNeighborsAdapter(
     items: List<Neighbor>,
-    val callback: ListNeighborHandler
+    private val callback: ListNeighborHandler
 ) : RecyclerView.Adapter<ListNeighborsAdapter.ViewHolder>() {
 
     private val mNeighbours: List<Neighbor> = items

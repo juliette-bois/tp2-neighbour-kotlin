@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import fr.juliettebois.dmii.tp03_juliette_bois.NavigationListener
 import fr.juliettebois.dmii.tp03_juliette_bois.R
 import fr.juliettebois.dmii.tp03_juliette_bois.databinding.ActivityMainBinding
+import fr.juliettebois.dmii.tp03_juliette_bois.di.DI
 import fr.juliettebois.dmii.tp03_juliette_bois.ui.fragments.ListNeighborsFragment
 
 class MainActivity : AppCompatActivity(), NavigationListener {
@@ -13,6 +14,7 @@ class MainActivity : AppCompatActivity(), NavigationListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        DI.inject(application)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
